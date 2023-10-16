@@ -5,6 +5,7 @@ import ByRegion from '/resources/js/ByRegion.vue'
 import ByEnergy from '/resources/js/ByEnergy.vue'
 import England from '/resources/js/England.vue'
 import ByDate from '/resources/js/ByDate.vue'
+import Test from '@/js/Test.vue'
 
 const routes = [
     {
@@ -36,6 +37,11 @@ const routes = [
         path:'/bydate',
         name:'ByDate',
         component:ByDate
+    },
+    {
+        path:'/test',
+        name:'Test',
+        component:Test
     },
 
 ]
