@@ -28,7 +28,7 @@ justify your choices and omissions.
 
 ![ByDate](https://i.imgur.com/zmp8dL7.png)
 
-## Testing
+## Testing API
 
 ```
 emera@huni MINGW64 /c/repository/test/carbon-intensity (main)
@@ -45,6 +45,41 @@ $ php artisan test
 
   Tests:    5 passed (10 assertions)
   Duration: 1.39s
+```
+
+## Api Route
+
+```
+Route::get('/intensity', [CarbonIntensity::class,'intensity']);
+Route::get('/regionlist', [CarbonIntensity::class,'regionlist']);
+Route::get('/region/{regionid}', [CarbonIntensity::class,'byregion']);
+Route::get('/energy', [CarbonIntensity::class,'byenergy']);
+Route::get('/average/{from}/{to}', [CarbonIntensity::class,'average']);
+```
+
+## PHP Process and Consume third party API
+
+```
+    public function average(Request $request) 
+    {
+        $from = date('Y-m-dTH:i', strtotime($request->from) );
+        $to = date('Y-m-dTH:i', strtotime($request->to));
+
+        $path = '/intensity/'. $from.'/'. $to;
+        $response = Http::get($this->api . $path);
+        $data = $response->json()['data'];
+        $actual = $forecast = 0;
+        foreach($data as $temp) {
+            $actual += $temp['intensity']['actual'];
+            $forecast += $temp['intensity']['forecast'];
+            
+        }
+       
+        return response([
+            'data' => $data,
+            'actual' => round($actual/count($data),2),
+            'forecast' => round($forecast/count($data),2)
+    ]);
 ```
 
 A Laravel 10 Single Page Application using Vue.js 3 and  Vite
