@@ -84,7 +84,7 @@
             </li>
           
             <li class="-mx-6 mt-auto">
-              <a href="#" class="flex items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-white hover:bg-indigo-700">
+              <a href="#" class="flex items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-indigo-700 hover:bg-indigo-700 hover:text-white">
                 <img class="h-8 w-8 rounded-full bg-indigo-700" src="https://scontent.flhr10-2.fna.fbcdn.net/v/t1.6435-9/92466024_10158188137905349_4927942245891440640_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7a1959&_nc_ohc=72pGVyCUzo4AX9JxTb4&_nc_ht=scontent.flhr10-2.fna&oh=00_AfDNs270zqaeHpNMDCzcmQOSrKWQLHsJZ0Il93m4QLW3DQ&oe=6554538F" alt="" />
                 <span class="sr-only">Your profile</span>
                 <span aria-hidden="true">Emerald Junn</span>

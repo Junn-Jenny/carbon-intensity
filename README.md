@@ -20,13 +20,13 @@ We will discuss your submission in an interview so you will get a chance to
 justify your choices and omissions.
 
 ## Dashboard
-![Dashboard](https://i.imgur.com/WB6iXDk.png)
+![Dashboard](https://i.imgur.com/sdSQyfT.png)
 
-![ByRegion](https://i.imgur.com/r1alCjy.png)
+![ByRegion](https://i.imgur.com/x4FI363.jpg)
 
-![ByEnergy](https://i.imgur.com/Fe0GbsP.png)
+![ByEnergy](https://i.imgur.com/A6sHE1l.jpg)
 
-![ByDate](https://i.imgur.com/zmp8dL7.png)
+![ByDate](https://i.imgur.com/Kv2FCOx.png)
 
 ## Testing API
 
