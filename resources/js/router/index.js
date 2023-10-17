@@ -48,6 +48,6 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes, linkActiveClass: 'bg-indigo-700 text-white',
 })
 export default router

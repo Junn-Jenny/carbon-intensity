@@ -76,7 +76,7 @@
             <li>
               <ul role="list" class="-mx-2 space-y-1">
                 <li v-for="item in navigation" :key="item.name">
-                  <router-link :to="item.href" :class="[item.current ? 'bg-indigo-700 text-white' : 'text-indigo-800 hover:text-white hover:bg-indigo-700', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
+                  <router-link :to="item.href" class='text-indigo-800 hover:text-white hover:bg-indigo-700 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'>
                     <component :is="item.icon" :class="[item.current ? 'text-white' : 'text-indigo-200 group-hover:text-white', 'h-6 w-6 shrink-0']" aria-hidden="true" />
                     {{ item.name }}</router-link>
                 </li>
@@ -132,11 +132,11 @@
   } from '@heroicons/vue/24/outline'
   
   const navigation = [
-    { name: 'Dashboard', href: '/', icon: HomeIcon, current: false },
-    { name: 'Current Carbon Intensity', href: 'Intensity', icon: DocumentDuplicateIcon, current: false },
-    { name: 'Carbon Intensity by Region ', href: 'ByRegion', icon: DocumentDuplicateIcon, current: false },
-    { name: 'Carbon Intensity by Energy ', href: 'ByEnergy', icon: DocumentDuplicateIcon, current: false },
-    { name: 'Carbon Intensity by Date ', href: 'ByDate', icon: DocumentDuplicateIcon, current: false },
+    { name: 'Dashboard', href: '/', icon: HomeIcon},
+    { name: 'Current Carbon Intensity', href: 'Intensity', icon: DocumentDuplicateIcon},
+    { name: 'Carbon Intensity by Region ', href: 'ByRegion', icon: DocumentDuplicateIcon},
+    { name: 'Carbon Intensity by Energy ', href: 'ByEnergy', icon: DocumentDuplicateIcon},
+    { name: 'Carbon Intensity by Date ', href: 'ByDate', icon: DocumentDuplicateIcon},
     
   ]
   
