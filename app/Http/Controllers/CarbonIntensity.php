@@ -42,26 +42,12 @@ class CarbonIntensity extends Controller
         return $response->json();
     }
 
-    public function england()
+    public function country($country)
     {
-        $path = '/regional/england';
+        $path = "/regional/$country";
         $response = Http::get($this->api . $path);
         return $response->json();
-    }
-
-    public function scotland()
-    {
-        $path = '/regional/scotland';
-        $response = Http::get($this->api . $path);
-        return $response->json();
-    }
-
-    public function wales()
-    {
-        $path = '/regional/wales';
-        $response = Http::get($this->api . $path);
-        return $response->json();
-    }
+    }    
 
     public function byenergy() 
     {

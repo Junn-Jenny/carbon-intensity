@@ -25,9 +25,6 @@ Route::get('/region/{regionid}', [CarbonIntensity::class,'byregion']);
 
 Route::get('/energy', [CarbonIntensity::class,'byenergy']);
 
-Route::get('/england', [CarbonIntensity::class,'england']);
-Route::get('/scotland', [CarbonIntensity::class,'scotland']);
-
-Route::get('/wales', [CarbonIntensity::class,'wales']);
+Route::get('/country/{country}', [CarbonIntensity::class,'country']);
 
 Route::get('/average/{from}/{to}', [CarbonIntensity::class,'average']);

@@ -3,7 +3,7 @@ import Dashboard from '/resources/js/Dashboard.vue'
 import Intensity from '/resources/js/Intensity.vue'
 import ByRegion from '/resources/js/ByRegion.vue'
 import ByEnergy from '/resources/js/ByEnergy.vue'
-import England from '/resources/js/England.vue'
+import ByCountry from '/resources/js/ByCountry.vue'
 import ByDate from '/resources/js/ByDate.vue'
 import Test from '@/js/Test.vue'
 
@@ -27,21 +27,17 @@ const routes = [
         path:'/byenergy',
         name:'ByEnergy',
         component:ByEnergy
-    },
-    {
-        path:'/england',
-        name:'England',
-        component:England
-    },
+    },   
     {
         path:'/bydate',
         name:'ByDate',
         component:ByDate
     },
     {
-        path:'/test',
-        name:'Test',
-        component:Test
+        path:'/bycountry/:country',
+        name:'ByCountry',
+        component:ByCountry,
+        props: true,
     },
 
 ]

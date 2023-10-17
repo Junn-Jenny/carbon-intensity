@@ -137,6 +137,9 @@
     { name: 'Carbon Intensity by Region ', href: 'ByRegion', icon: DocumentDuplicateIcon},
     { name: 'Carbon Intensity by Energy ', href: 'ByEnergy', icon: DocumentDuplicateIcon},
     { name: 'Carbon Intensity by Date ', href: 'ByDate', icon: DocumentDuplicateIcon},
+    { name: 'Carbon Intensity in England', href: '/bycountry/england', icon: DocumentDuplicateIcon},
+    { name: 'Carbon Intensity in Scotland', href: '/bycountry/scotland', icon: DocumentDuplicateIcon},
+    { name: 'Carbon Intensity in Wales', href: '/bycountry/wales', icon: DocumentDuplicateIcon},
     
   ]
   
